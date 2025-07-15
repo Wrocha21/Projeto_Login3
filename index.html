@@ -16,46 +16,42 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tela de Login</title>
 </head>
-
 <body>
-    <main>
-        <div class="Formulario">
-            <form action="cadrasto.php" method="post" autocomplete="on">
-                <div class="Loginv">
-                    <h1>Crie Sua Conta</h1>
-                </div>
-                <div id="campo">
-                    <div class="label">
-                        <i id="icon" class="fa-solid fa-envelope"></i>
-                        <input type="email" name="email" id="1email" required placeholder="example@gmail.com">
-                    </div>
-                    <label for="1email"></label>
-                </div>
-                <div id="campo">
-                    <div class="label">
-                        <i id="icon" class="fa-solid fa-key"></i>
-                        <input type="password" name="senha" id="1senha" required placeholder="Senha" minlength="8"
-                        maxlength="20">
-                    </div>
-                    <label for="1senha"></label>
-                </div>
-                <div id="campo">
-                    <div class="label">
-                        <i id="icon" class="fa-solid fa-key"></i>
-                        <input type="password" name="senha" id="1senhar" required placeholder="Repita Sua Senha" minlength="8"
-                        maxlength="20">
-                    </div>
-                    <label for="1senhar"></label>
-                </div>
+    <main id="conteiner">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>Login</h1>
+            </div>
 
-                <input type="submit" value="Criar Conta">
-                <a class="botao" href="TelaLogin/pagLogin.html">
-                    Já tem uma Conta ?
-                </a>
-            </form>
-        </div>
+            <div class="socialmedia">
+                <a href="">
+                    <img src="Assets/FaceLogo.jpg" alt="FacebookLogo"></a>
+                <a href="">
+                    <img src="Assets/LogoGoogle.png" alt="GoogleLogo"></a>
+                <a href="">
+                    <img src="Assets/LogoGitHub.png" alt="GitHubLogo"></a>
+            </div>
+
+            <div id="Inputs">
+                <div class="input-box">
+                    <label for="1email">
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="email" name="email" id="1email">
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label for="1senha">
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" name="senha" id="1senha">
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </form>
     </main>
-
 </body>
 
 </html>
