@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+
+/*Configuraçoes Mediaquires*/
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    main#conteiner {
+        width: 630px;
+    }
+
+    main#conteiner > form {
+        float: right;
+        margin-top: 90px;
+        width: 68%;
+    }
+
+    div.imagem{
+        float: left;
+        width: 200px;
+        height: 100%;
+    }
+
+    form > input[type=submit] {
+        margin-left: 22px;
+    }
+
+    div.social {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    main#conteiner {
+        width: 830px;
+    }
+
+    main#conteiner > form {
+        float: right;
+        margin-top: 90px;
+        width: 51%;
+    }
+
+    div.imagem{
+        float: left;
+        width: 400px;
+        height: 100%;
+    }
+
+    form > input[type=submit] {
+        margin-left: 22px;
+    }
+
+    div.social {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main#conteiner {
+        width: 930px;
+    }
+
+    main#conteiner > form {
+        float: right;
+        margin-top: 90px;
+        width: 53%;
+    }
+
+    div.imagem{
+        float: left;
+        width: 430px;
+        height: 100%;
+    }
+
+    form > input[type=submit] {
+        margin-left: 22px;
+    }
+
+    div.social {
+        margin-left: 95px;
+    }
+}

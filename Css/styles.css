@@ -7,19 +7,22 @@
 
 body {
     display: flex;
-    background-color: rgb(218, 229, 233);
     justify-content: center;
     align-items: center;
+    background-color: rgb(29, 28, 28);
+    background-size: cover;
     width: 100vw;
     min-height: 100vh;
 }
 
 main#conteiner {
-    background-color: white;
-    height: 400px;
+    background-color: rgb(255, 255, 255);
     width: 330px;
+    height: 599px;
     border-radius: 10px;
-    box-shadow: 0px 0px 4px 0px black;
+    transition: width .3s, height .3s;
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+    overflow: hidden;
 }
 
 main#conteiner > form > h1 {
@@ -30,21 +33,116 @@ main#conteiner > form > h1 {
 
 main#conteiner > form > div.input-box {
     position: relative;
-    margin: 0px 0px 20px 38px;
+    margin: 0px 0px 20px 10px;
     
 }
 
 main#conteiner > form > div.input-box > input {
-    padding: 9px;
+    padding: 12px;
     outline: none;
     border-radius: 10px;
     border: 1px solid rgb(105, 105, 105);
-    width: 86%;
+    width: 97%;
 }
 
 i {
     position: absolute;
-    left: 77%;
-    top: 10px;
-    color: rgb(202, 18, 248);
+    left: 89%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+}
+
+ div.imagem {
+    background: black url(../Assets/resource-database-KhPkJtxuYg0-unsplash.jpg) top center no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 20px;
+
+}
+
+form > input[type=submit] {
+    display: block;
+    background-color:rgb(39, 39, 39);
+    color: white;
+    width: 90%;
+    padding: 10px;
+    margin: 0px 0px 20px 15px;
+
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid grey;
+    transition: 0.3s ease;
+}
+
+form > input[type=submit]:hover {
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+    transition: color 0.7s;
+}
+
+ form > a#input-rec{
+    color: black;
+    background: none;
+    margin: 0px 0px 10px 15px;
+    padding: 5px;
+
+
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-size: 0.79em;
+    font-weight: 500;
+}
+
+form > a#input-rec:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+}
+
+
+div.social {
+    display: flex;
+    margin: 60px 0px 0px 15px;
+    justify-content: center;
+    width: 300px;
+    gap: 40px;
+}
+
+div.social img {
+    width: 30px;
+}
+
+#ic1 {
+    transition: 0.6s ease;
+    
+}
+
+img#ic1:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+#ic2 {
+    transition: 0.6s ease;
+    
+}
+
+img#ic2:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+#ic3 {
+    transition: 0.6s ease;
+    
+}
+
+img#ic3:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
 }
