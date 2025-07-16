@@ -18,38 +18,24 @@
 </head>
 <body>
     <main id="conteiner">
-        <form id="login_form">
-            <div id="form_header">
-                <h1>Login</h1>
+        <form autocomplete="on">
+            <h1>Login</h1>
+            <div class="input-box">
+                <i id="icons" class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" id="1email" required placeholder="example@gmail.com">
+            </div>
+            <label for="1email"></label>
+            <div class="input-box">
+                <i id="icons" class="fa-solid fa-key"></i>
+                <input type="password" name="password" id="pass1" required placeholder="Sua Senha" minlength="8" maxlength="20">
             </div>
 
-            <div class="socialmedia">
+            <input type="submit" value="Login">
+            <button type="submit">
                 <a href="">
-                    <img src="Assets/FaceLogo.jpg" alt="FacebookLogo"></a>
-                <a href="">
-                    <img src="Assets/LogoGoogle.png" alt="GoogleLogo"></a>
-                <a href="">
-                    <img src="Assets/LogoGitHub.png" alt="GitHubLogo"></a>
-            </div>
-
-            <div id="Inputs">
-                <div class="input-box">
-                    <label for="1email">
-                        <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="email" name="email" id="1email">
-                        </div>
-                    </label>
-                </div>
-                <div class="input-box">
-                    <label for="1senha">
-                        <div class="input-field">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" name="senha" id="1senha">
-                        </div>
-                    </label>
-                </div>
-            </div>
+                    Esqueceu sua Senha?
+                </a>
+            </button>
         </form>
     </main>
 </body>
