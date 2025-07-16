@@ -12,7 +12,7 @@ body {
     background-color: rgb(29, 28, 28);
     background-size: cover;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 main#conteiner {
