@@ -16,6 +16,9 @@ body, html {
 }
 
 main#conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
     width: 338px;
     height: 575px;
@@ -68,6 +71,7 @@ form > input[type=submit] {
     width: 90%;
     padding: 10px;
     margin: 0px 0px 20px 15px;
+    cursor: pointer;
 
     font-weight: 600;
     border-radius: 5px;
@@ -111,38 +115,34 @@ div.social {
     justify-content: center;
     width: 300px;
     gap: 40px;
+    
 }
 
 div.social img {
-    width: 30px;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px 0px black;
 }
 
-#ic1 {
-    transition: 0.6s ease;
-    
+.ic {
+    transition: 0.6s ease;  
 }
 
-img#ic1:hover {
+.ic:hover  {
     transition: 0.6s;
     transform: scale(1.1);
 }
 
-#ic2 {
-    transition: 0.6s ease;
-    
+div#res {
+    color: red;
 }
 
-img#ic2:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
-#ic3 {
-    transition: 0.6s ease;
-    
-}
-
-img#ic3:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
+#formLg {
+    margin-bottom: 140px;
 }

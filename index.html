@@ -20,41 +20,46 @@
 <body>
     <main id="conteiner">
         <div class="imagem"></div>
-        <form autocomplete="on">
+        <form autocomplete="off" id="formLg">
+            <div class="logo">
+                <img src="Assets/Logo.png" width="100" alt="">
+            </div>
             <div class="input-box">
                 <i id="icons" class="fa-solid fa-user"></i>
-                <input type="text" name="user" id="1ussr" required placeholder="Nome de Usuario" autocomplete="username" pattern="setcustomvalidity">
+                <input type="text" name="user" id="user"  placeholder="Nome de Usuario" pattern="setcustomvalidity">
             </div>
-            <label for="1user"></label>
+            <label for="user"></label>
 
             <div class="input-box">
                 <i id="icons" class="fa-solid fa-envelope"></i>
-                <input type="email" name="email" id="1email" required placeholder="example@gmail.com" autocomplete="email">
+                <input type="email" name="email" id="1email"   placeholder="example@gmail.com">
             </div>
             <label for="1email"></label>
 
             <div class="input-box">
                 <i id="icons" class="fa-solid fa-key"></i>
-                <input type="password" name="password" id="pass1" required placeholder="Sua Senha" minlength="8" maxlength="20" autocomplete="current-password">
+                <input type="password" name="password" id="senha"  placeholder="Sua Senha"  autocomplete="current-password">
             </div>
+            <div id="res"></div>
 
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" onclick="logar()">
             <a id="input-rec" href="#">
                  Esqueceu sua Senha?
             </a>
             <div class="social">
                 <a href="#">
-                    <img id="ic1" src="Assets/icons8-github-48.png" alt="">
+                    <img class="ic" id="ic1" src="Assets/IconGit.png" alt="">
                 </a>
                 <a href="#">
-                    <img id="ic2" src="Assets/icons8-google-logo-48.png" alt="">
+                    <img class="ic" id="ic2" src="Assets/IconGoogle.png" alt="">
                 </a>
                 <a href="#">
-                    <img id="ic3" src="Assets/icons8-facebook-novo-48.png" alt="">
+                    <img class="ic" id="ic3" src="Assets/IconFace.png" alt="">
                 </a>
             </div>
         </form>
     </main>
+    <script src="Javascript/script.js"></script>
 </body>
 
 </html>
